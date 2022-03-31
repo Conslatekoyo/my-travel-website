@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">KOYOTRAVELS</h2>
+            <div class="toggle"></div>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Destination</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contacts</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Navigate</button>
+                
+              </div>
+        </header>
+
+        <video src="/production ID_4611893.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Live Life With No Excuses,</h2>
+       <h3>Travel With No Regret.</h3>
+       <p>Man cannot discover new oceans unless he has the courage to lose the sight of the shore.There is a sunrise and a sunset every single day and they're asolutely free.Don't miss so many of them.</p>
+        <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="ig.png" alt="" width="60px"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="" width="60px"></a></li>
+            <li><a href="#"><img src="facebook.png" alt="" width="90px"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Destination</li>
+            <li><a href="#"></a>Blogs</li>
+            <li><a href="#"></a>Contacts</li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySeector('.toggle')
+        const showcase = document.querySeector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            menuToggle.classList.showcase('active')
+
+        })
+                /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }
+
+    </script>
+</body>
+</html>
